@@ -10,14 +10,11 @@ class DrawerOption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return ListTile(
       onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(13),
-        child: Text(
-          '> $text',
-          style: Styles.drawerOptionStyle,
-        ),
+      title: Text(
+        '> $text',
+        style: Styles.drawerOptionStyle,
       ),
     );
   }
